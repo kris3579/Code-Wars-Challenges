@@ -15,8 +15,9 @@ describe('Testing for funtionality from "powerOfTwo"', () => {
     expect(result4).toEqual(false);
     expect(result5).toEqual(true);
   });
-  test('Testing for succesful return of true with an input of 0', () => {
-    const result = powerOfTwo(0);
+
+  test('Testing for succesful return of true with an input of 1', () => {
+    const result = powerOfTwo(1);
     expect(result).toEqual(true);
   });
 });
