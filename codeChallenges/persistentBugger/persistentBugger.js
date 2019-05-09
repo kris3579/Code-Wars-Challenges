@@ -20,10 +20,11 @@ function persistence(value) {
         multiplyingValue *= parseInt(storedValue.toString().charAt(i), 10);
       }
 
-      if (multiplyingValue === 0) {
+      if (multiplyingValue === 0 && i === 0) {
         multiplyingValue += parseInt(storedValue.toString().charAt(i), 10);
       }
     }
+
     counter += 1;
     storedValue = multiplyingValue;
     multiplyingValue = 0;

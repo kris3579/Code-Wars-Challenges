@@ -15,8 +15,12 @@ describe('Testing for functionality', () => {
     const result1 = persistence(39);
     const result2 = persistence(4);
     const result3 = persistence(999);
+    const result4 = persistence(4081908);
+    const result5 = persistence(8380587);
     expect(result1).toEqual(3);
     expect(result2).toEqual(0);
     expect(result3).toEqual(4);
+    expect(result4).toEqual(1);
+    expect(result5).toEqual(1);
   });
 });
